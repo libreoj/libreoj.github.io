@@ -1,0 +1,257 @@
+
+<style>
+.ui.label.pointing.below.left::before { left: 12%; }
+.ui.label.pointing.below.right::before { left: 88%; }
+.ui.label.pointing.below.left { margin-bottom: 0; }
+.ui.label.pointing.below.right { margin-bottom: 0; float: right; }
+#back_to_contest { display: none;  }
+</style>
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" style="position: fixed; width: 100%; overflow: hidden; ">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=1200">
+    <title>LibreOJ NOI Round #1 Day 1 - 比赛 - LibreOJ</title>
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/tomorrow.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/math.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/style.css?20181212" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/morris.js/0.5.1/morris.css" rel="stylesheet">
+    
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/fira-mono.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/lato.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/open-sans.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/exo-2.css" rel="stylesheet">
+    
+    <script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-75865916-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+</head>
+<body style="position: relative; margin-top: 49px; height: calc(100% - 49px); overflow-y: overlay; ">
+    <div class="ui fixed borderless menu" style="position: fixed; height: 49px; ">
+        <div class="ui container">
+            
+            <a class="header item" href="/"><img src="/logo.svg" style="width: 90px; height: 30px; "></a>
+            
+            <a class="item" href="/"><i class="home icon"></i> 首页</a>
+            <a class="item" href="/problems"><i class="list icon"></i> 题库</a>
+            <a class="item active" href="/contests"><i class="calendar icon"></i> 比赛</a>
+            <a class="item" href="/submissions"><i class="tasks icon"></i> 评测</a>
+            <a class="item" href="/ranklist"><i class="signal icon"></i> 排名</a>
+            <a class="item" href="/discussion/global"><i class="comments icon"></i> 讨论</a>
+            <a class="item" href="/help"><i class="help circle icon"></i> 帮助</a>
+            
+              <a id="back_to_contest" class="item" href="/contest/6"><i class="arrow left icon"></i> 返回比赛</a>
+            
+            <div class="right menu">
+              
+                <div class="item">
+                    <a class="ui button" style="margin-right: 0.5em; " href="/login?url=%2Fcontest%2F6">
+                        登录
+                    </a>
+                    <a class="ui primary button" href="/sign_up?url=%2Fcontest%2F6">
+                        注册
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 28px; ">
+    <div class="ui main container">
+
+<div class="padding">
+  <h1>LibreOJ NOI Round #1 Day 1</h1>
+  <div style="margin-bottom: 30px;"><div style="position: relative; overflow: hidden; "><p>LibreOJ NOI 模拟赛的 Day 1，欢迎来玩！</p>
+</div></div>
+  
+  
+  
+  
+  
+  <div class="ui pointing below left label">2017-07-07 8:30:00</div>
+  <div class="ui pointing below right label">2017-07-07 13:30:00</div>
+  
+  <div id="timer-progress" class="ui tiny indicating progress success" data-percent="100">
+    <div class="bar" style="width: 100%;"></div>
+  </div>
+  <div class="ui grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui buttons">
+          
+            <a class="ui small blue button" href="/contest/6/ranklist">排行榜</a>
+          
+          
+          <a class="ui small positive button" href="/submissions?contest=6">提交记录</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <h4 class="ui top attached block header">信息与公告</h4>
+        <div class="ui bottom attached segment font-content">
+          <div style="position: relative; overflow: hidden; "><p><strong><a href="/article/62">公告</a></strong></p>
+<p><strong><a href="/article/87">题解</a></strong></p>
+<p><strong><a href="/article/98">总榜</a></strong></p>
+<hr>
+<p><strong>UPD 1</strong></p>
+<ol>
+<li>刚刚 OJ 系统有调整，建议刷新界面。</li>
+<li>T1题面做出补充了，更清楚地表述了题意。</li>
+<li>提醒大家，subtask 是捆绑测试。</li>
+</ol>
+<p><strong>UPD 2</strong></p>
+<ol>
+<li>请注意使用的是标准输入输出。</li>
+<li>比赛成绩以最后一次提交（<strong>包括 CE</strong>）为准。</li>
+</ol>
+<p><strong>UPD 3</strong></p>
+<p><strong>B 题题面更正：操作 1 中不保证 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.556ex" height="2.676ex" style="vertical-align: -0.838ex;" viewBox="0 -791.3 2392.1 1152.1" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-2-Title">
+<title id="MathJax-SVG-2-Title">u\neq v</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E2-MJMATHI-75" d="M21 287Q21 295 30 318T55 370T99 420T158 442Q204 442 227 417T250 358Q250 340 216 246T182 105Q182 62 196 45T238 27T291 44T328 78L339 95Q341 99 377 247Q407 367 413 387T427 416Q444 431 463 431Q480 431 488 421T496 402L420 84Q419 79 419 68Q419 43 426 35T447 26Q469 29 482 57T512 145Q514 153 532 153Q551 153 551 144Q550 139 549 130T540 98T523 55T498 17T462 -8Q454 -10 438 -10Q372 -10 347 46Q345 45 336 36T318 21T296 6T267 -6T233 -11Q189 -11 155 7Q103 38 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path>
+<path stroke-width="1" id="E2-MJMAIN-2260" d="M166 -215T159 -215T147 -212T141 -204T139 -197Q139 -190 144 -183L306 133H70Q56 140 56 153Q56 168 72 173H327L406 327H72Q56 332 56 347Q56 360 70 367H426Q597 702 602 707Q605 716 618 716Q625 716 630 712T636 703T638 696Q638 692 471 367H707Q722 359 722 347Q722 336 708 328L451 327L371 173H708Q722 163 722 153Q722 140 707 133H351Q175 -210 170 -212Q166 -215 159 -215Z"></path>
+<path stroke-width="1" id="E2-MJMATHI-76" d="M173 380Q173 405 154 405Q130 405 104 376T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Q21 294 29 316T53 368T97 419T160 441Q202 441 225 417T249 361Q249 344 246 335Q246 329 231 291T200 202T182 113Q182 86 187 69Q200 26 250 26Q287 26 319 60T369 139T398 222T409 277Q409 300 401 317T383 343T365 361T357 383Q357 405 376 424T417 443Q436 443 451 425T467 367Q467 340 455 284T418 159T347 40T241 -11Q177 -11 139 22Q102 54 102 117Q102 148 110 181T151 298Q173 362 173 380Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E2-MJMATHI-75" x="0" y="0"></use>
+ <use xlink:href="#E2-MJMAIN-2260" x="850" y="0"></use>
+ <use xlink:href="#E2-MJMATHI-76" x="1906" y="0"></use>
+</g>
+</svg></span> 。</strong></p>
+<p>这对于标准算法和大多数算法没有影响，对于给大家造成的不便，我们深感抱歉，敬请谅解。</p>
+<p><strong>UPD 4</strong></p>
+<p><strong>B 题题面补充：更新了简略题意 。</strong></p>
+<p><strong>UPD 5</strong></p>
+<p><strong>B 题第七个子任务第三个测试点的 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.007ex" height="1.676ex" style="vertical-align: -0.338ex;" viewBox="0 -576.1 433.5 721.6" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-3-Title">
+<title id="MathJax-SVG-3-Title">c</title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E3-MJMATHI-63" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E3-MJMATHI-63" x="0" y="0"></use>
+</g>
+</svg></span> 超过了该测试点数据范围，现更正数据并重测所有比赛提交。</strong></p>
+<hr>
+<p>赛事答疑请加群：631401747</p>
+</div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="column">
+         <table class="ui selectable celled table">
+            <thead>
+              <tr>
+                <th class="one wide" style="text-align: center">状态</th>
+                <th>题目</th>
+                
+                  <th class="one wide center aligned">统计</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="/contest/6/problem/1">接竹竿</a></td>
+                
+                  <td class="center aligned" style="white-space: nowrap; ">
+                  <a href="/contest/6/submissions?problem_id=1&amp;status=Accepted">99</a>
+                  /
+                    <a href="/contest/6/submissions?problem_id=1&amp;min_score=1">113</a>
+                    
+                    /
+                  
+                  <a href="/contest/6/submissions?problem_id=1">120</a>
+                  </td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="/contest/6/problem/2">失控的未来交通工具</a></td>
+                
+                  <td class="center aligned" style="white-space: nowrap; ">
+                  <a href="/contest/6/submissions?problem_id=2&amp;status=Accepted">4</a>
+                  /
+                    <a href="/contest/6/submissions?problem_id=2&amp;min_score=1">57</a>
+                    
+                    /
+                  
+                  <a href="/contest/6/submissions?problem_id=2">66</a>
+                  </td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="/contest/6/problem/3">动态几何问题</a></td>
+                
+                  <td class="center aligned" style="white-space: nowrap; ">
+                  <a href="/contest/6/submissions?problem_id=3&amp;status=Accepted">2</a>
+                  /
+                    <a href="/contest/6/submissions?problem_id=3&amp;min_score=1">94</a>
+                    
+                    /
+                  
+                  <a href="/contest/6/submissions?problem_id=3">97</a>
+                  </td>
+                
+              </tr>
+            
+            </tbody>
+        </table>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+<script>
+$(function () {
+  setInterval(function () {
+    $('#timer-progress').progress({
+      value: Date.now() / 1000 - 1499387400,
+      total: 18000
+    });
+  }, 5000);
+});
+</script>
+</div>
+    <div class="ui vertical footer segment" style="margin-top: 15px; ">
+      <div class="ui center aligned container">
+        <span style="color: #999;">LibreOJ Powered by <a href="https://github.com/syzoj/syzoj" target="_blank">SYZOJ</a>.</span>
+      </div>
+    </div>
+</div>
+<script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/script.js?20170710"></script>
+</body>
+</html>
+

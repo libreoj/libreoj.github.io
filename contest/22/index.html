@@ -1,0 +1,409 @@
+
+<style>
+.ui.label.pointing.below.left::before { left: 12%; }
+.ui.label.pointing.below.right::before { left: 88%; }
+.ui.label.pointing.below.left { margin-bottom: 0; }
+.ui.label.pointing.below.right { margin-bottom: 0; float: right; }
+#back_to_contest { display: none;  }
+</style>
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" style="position: fixed; width: 100%; overflow: hidden; ">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=1200">
+    <title>你好，戊戌 / Hello, WuXu（LibreOJ Round #8） - 比赛 - LibreOJ</title>
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/tomorrow.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/math.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/style.css?20181212" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/morris.js/0.5.1/morris.css" rel="stylesheet">
+    
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/fira-mono.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/lato.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/open-sans.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/exo-2.css" rel="stylesheet">
+    
+    <script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-75865916-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+</head>
+<body style="position: relative; margin-top: 49px; height: calc(100% - 49px); overflow-y: overlay; ">
+    <div class="ui fixed borderless menu" style="position: fixed; height: 49px; ">
+        <div class="ui container">
+            
+            <a class="header item" href="/"><img src="/logo.svg" style="width: 90px; height: 30px; "></a>
+            
+            <a class="item" href="/"><i class="home icon"></i> 首页</a>
+            <a class="item" href="/problems"><i class="list icon"></i> 题库</a>
+            <a class="item active" href="/contests"><i class="calendar icon"></i> 比赛</a>
+            <a class="item" href="/submissions"><i class="tasks icon"></i> 评测</a>
+            <a class="item" href="/ranklist"><i class="signal icon"></i> 排名</a>
+            <a class="item" href="/discussion/global"><i class="comments icon"></i> 讨论</a>
+            <a class="item" href="/help"><i class="help circle icon"></i> 帮助</a>
+            
+              <a id="back_to_contest" class="item" href="/contest/22"><i class="arrow left icon"></i> 返回比赛</a>
+            
+            <div class="right menu">
+              
+                <div class="item">
+                    <a class="ui button" style="margin-right: 0.5em; " href="/login?url=%2Fcontest%2F22">
+                        登录
+                    </a>
+                    <a class="ui primary button" href="/sign_up?url=%2Fcontest%2F22">
+                        注册
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 28px; ">
+    <div class="ui main container">
+
+<div class="padding">
+  <h1>你好，戊戌 / Hello, WuXu（LibreOJ Round #8）</h1>
+  <div style="margin-bottom: 30px;"><div style="position: relative; overflow: hidden; "><p>穿越 OI，向未知前进吧！ </p><div class="lang-divider"></div> Welcome to LibreOJ Round #8 "Hello WuXu"!<p></p>
+</div></div>
+  
+  
+  
+  
+  
+  <div class="ui pointing below left label">2018-02-22 18:00:00</div>
+  <div class="ui pointing below right label">2018-02-22 22:15:00</div>
+  
+  <div id="timer-progress" class="ui tiny indicating progress success" data-percent="100">
+    <div class="bar" style="width: 100%;"></div>
+  </div>
+  <div class="ui grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui buttons">
+          
+            <a class="ui small blue button" href="/contest/22/ranklist">排行榜</a>
+          
+          
+          <a class="ui small positive button" href="/submissions?contest=22">提交记录</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <h4 class="ui top attached block header">信息与公告</h4>
+        <div class="ui bottom attached segment font-content">
+          <div style="position: relative; overflow: hidden; "><p><strong><a href="/article/307">公告</a></strong></p>
+<p><strong><a href="/article/322">题解</a></strong></p>
+<div class="ui message">
+<p>夜幕如昔，人世间却是万家灯火。</p>
+<p>钟声敲响，戊戌年已悄然来临。</p>
+<p>旧岁的辉煌或不堪已然不复，120 年的真实也已成过眼云烟。</p>
+<p>唯未知之未来，方为你我之所之。</p>
+</div>
+<p>新春已至，LibreOJ 也将辞旧迎新，并为大家举办一场盛大的戊戌新年赛。</p>
+<p>这次新年赛的题目相比以往难度较低，但我们选择了一些有趣的想法，并设有较多部分分，相信参加比赛的各位选手都能有所收获。</p>
+<p>本次比赛将使用每道题分值不同的 IOI 赛制。</p>
+<p>本次比赛同样有 LibreOJ 纪念品等待大家，Good luck &amp; have fun！</p>
+<p>下面介绍比赛的具体情况。</p>
+<h3>基本信息</h3>
+<ul>
+<li><strong>时间</strong>　2018 年 2 月 22 日，星期四，大年初七，晚上 18:00 ~ 22:15</li>
+<li><strong>时长</strong>　4 小时 15 分钟</li>
+<li><strong>题数</strong>　6</li>
+<li><strong>赛制</strong>　IOI，每道题分值不同</li>
+<li><font color="red"><strong>Rated</strong></font></li>
+</ul>
+<h3>题目信息</h3>
+<p>每道题目的分值如下（比赛时你的提交显示的得分是占该题分值的百分比）：</p>
+<table class="ui structured celled table">
+<thead>
+<tr>
+<th style="text-align:center;"><strong>A</strong></th>
+<th style="text-align:center;"><strong>B</strong></th>
+<th style="text-align:center;"><strong>C</strong></th>
+<th style="text-align:center;"><strong>D</strong></th>
+<th style="text-align:center;"><strong>E</strong></th>
+<th style="text-align:center;"><strong>F</strong></th>
+<th style="text-align:center;"><strong>总分</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">500</td>
+<td style="text-align:center;">750</td>
+<td style="text-align:center;">1000</td>
+<td style="text-align:center;">1500</td>
+<td style="text-align:center;">2000</td>
+<td style="text-align:center;">2250</td>
+<td style="text-align:center;">8000</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>说明</h3>
+<ol>
+<li>
+<p>如遇到测评状态 <span class="status judgement_failed"><i class="server icon"></i> Judgement Failed </span> <span class="status system_error"><i class="icon server"></i>    System Error  </span><span class="status invalid_interaction"><i class="icon ban"></i>    Invalid Interaction  </span><span class="status no_testdata"><i class="icon folder open outline"></i>    No Testdata  </span><span class="status unknown"><i class="icon man"></i> Unknown </span>等，请立即与管理员联系。</p>
+</li>
+<li>
+<p>比赛无需注册，提交即为参赛。</p>
+</li>
+<li>
+<p>IOI 赛制取每题得分最高的一次提交计算总分。</p>
+</li>
+</ol>
+<hr>
+<h3>UPD</h3>
+<ol>
+<li>(19:00) 由于国际网络线路出现问题，从国内访问 LibreOJ 不稳定，受此影响，比赛延时 15 分钟。</li>
+<li>(19:23) F 题原本的样例 2 数据范围错误，已删除。</li>
+<li>(22:00) D 题 Subtask #4 原数据不符合数据范围，已修改数据并重测。</li>
+</ol>
+<hr>
+<p>赛事答疑请加 QQ 群：631401747</p>
+<div class="lang-divider"></div>
+<p><strong><a href="/article/307">Announcement</a></strong></p>
+<p><strong><a href="/article/322">Editorial</a></strong></p>
+<div class="ui message">
+<p>The night falls usually, while the street lights are shining;</p>
+<p>The new year came quietly, with the bells of temples ringing.</p>
+<p>The splendours and hardships of the bygones has faded away, rendering centuries of reality as transient as fleeting clouds;</p>
+<p>And the uncertainties and probabilities of the future is yet to come, making the shared offing between you and me.</p>
+</div>
+<p>The Lunar New Year is here! Out with the old, in with the new, <a href="https://loj.ac/">LibreOJ</a> is holding a grand contest for the Year of Wuxu.</p>
+<p>The round will be similar to a normal Codeforces Div.1 round in difficulty. We have picked some interesting ideas for this round, and partial-score subtasks will be available. We believe that all participants can get quite a bit from them.</p>
+<p>The round will be held on IOI rules with no submission limit, the scores of different problems will be different.</p>
+<p>Conventionally, participants have chances to get LibreOJ souvenirs. Good luck and have fun!</p>
+<p>Detailed information on the round is as follows.</p>
+<h3>Basic Information</h3>
+<ul>
+<li><strong>Time:</strong> <a href="https://www.timeanddate.com/worldclock/fixedtime.html?iso=20180222T18&amp;p1=33&amp;ah=4">22 Feb 2018, 18:00~22:15 CST (UTC +8)</a></li>
+<li><strong>Duration:</strong> 4 hours and 15 minutes</li>
+<li><strong>Number of tasks:</strong> 6</li>
+<li><strong>Rules:</strong> modified IOI rules</li>
+<li><strong>Rated on LibreOJ</strong></li>
+</ul>
+<h3>Tasks</h3>
+<p>Scores for individual tasks are as follows. Note that during the contest, the feedback will be given in percentages instead of actual values.</p>
+<table class="ui structured celled table">
+<thead>
+<tr>
+<th style="text-align:center;"><strong>A</strong></th>
+<th style="text-align:center;"><strong>B</strong></th>
+<th style="text-align:center;"><strong>C</strong></th>
+<th style="text-align:center;"><strong>D</strong></th>
+<th style="text-align:center;"><strong>E</strong></th>
+<th style="text-align:center;"><strong>F</strong></th>
+<th style="text-align:center;"><strong>Total</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">500</td>
+<td style="text-align:center;">750</td>
+<td style="text-align:center;">1000</td>
+<td style="text-align:center;">1500</td>
+<td style="text-align:center;">2000</td>
+<td style="text-align:center;">2250</td>
+<td style="text-align:center;">8000</td>
+</tr>
+</tbody>
+</table>
+<h2><span style="color:red;">Notes<span></span></span></h2>
+<ul>
+<li>
+<p><strong>So far most of the contents (problems and announcements) on the site are in Chinese only, but the problems of this round will be available in both English and Chinese. As long as the menu bars are in English things are working well.</strong></p>
+</li>
+<li>
+<p><strong>Notice that the updates of the contest will be announced here.We are sorry that we don't have alert messages on pages,so please refresh this contest page to get updated information.</strong></p>
+</li>
+<li>
+<p><strong>If you have any questions about the contest,please use <a href="/discussion/global">discussion</a> or comment <a href="http://codeforces.com/blog/entry/57894">here</a>.</strong></p>
+</li>
+<li>
+<p>The register email of LibreOJ is in simplified Chinese, but don't worry, you only need to click the link in it to complete your registration.</p>
+</li>
+<li>
+<p>You do not need to register for a contest on LibreOJ. Every submitter is regarded as a participant.</p>
+</li>
+</ul>
+<hr>
+<h3>UPD</h3>
+<ol>
+<li>(19:00) <strong>The contest is extended by 15 minutes because of network problems.</strong></li>
+<li>(19:23) The old sample #2 of problem F didn't satisfy the data limit,it has been deleted.</li>
+<li>(22:00) The test data of the subtask #4 of problem D didn't satisfy the data limit,it has been fixed and rejudged.</li>
+</ol>
+</div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="column">
+         <table class="ui selectable celled table">
+            <thead>
+              <tr>
+                <th class="one wide" style="text-align: center">状态</th>
+                <th>题目</th>
+                
+                  <th class="one wide center aligned">统计</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="/contest/22/problem/1">Matching</a></td>
+                
+                  <td class="center aligned" style="white-space: nowrap; ">
+                  <a href="/contest/22/submissions?problem_id=1&amp;status=Accepted">53</a>
+                  /
+                    <a href="/contest/22/submissions?problem_id=1&amp;min_score=1">67</a>
+                    
+                    /
+                  
+                  <a href="/contest/22/submissions?problem_id=1">73</a>
+                  </td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="/contest/22/problem/2">Matrix</a></td>
+                
+                  <td class="center aligned" style="white-space: nowrap; ">
+                  <a href="/contest/22/submissions?problem_id=2&amp;status=Accepted">14</a>
+                  /
+                    <a href="/contest/22/submissions?problem_id=2&amp;min_score=1">62</a>
+                    
+                    /
+                  
+                  <a href="/contest/22/submissions?problem_id=2">65</a>
+                  </td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="/contest/22/problem/3">MIN&amp;MAX I</a></td>
+                
+                  <td class="center aligned" style="white-space: nowrap; ">
+                  <a href="/contest/22/submissions?problem_id=3&amp;status=Accepted">6</a>
+                  /
+                    <a href="/contest/22/submissions?problem_id=3&amp;min_score=1">30</a>
+                    
+                    /
+                  
+                  <a href="/contest/22/submissions?problem_id=3">35</a>
+                  </td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="/contest/22/problem/4">MINIM</a></td>
+                
+                  <td class="center aligned" style="white-space: nowrap; ">
+                  <a href="/contest/22/submissions?problem_id=4&amp;status=Accepted">2</a>
+                  /
+                    <a href="/contest/22/submissions?problem_id=4&amp;min_score=1">24</a>
+                    
+                    /
+                  
+                  <a href="/contest/22/submissions?problem_id=4">29</a>
+                  </td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="/contest/22/problem/5">MIN&amp;MAX II</a></td>
+                
+                  <td class="center aligned" style="white-space: nowrap; ">
+                  <a href="/contest/22/submissions?problem_id=5&amp;status=Accepted">0</a>
+                  /
+                    <a href="/contest/22/submissions?problem_id=5&amp;min_score=1">3</a>
+                    
+                    /
+                  
+                  <a href="/contest/22/submissions?problem_id=5">8</a>
+                  </td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="/contest/22/problem/6">Moejy0viiiiiv&#39;s Red Envelopes / 抢红包</a></td>
+                
+                  <td class="center aligned" style="white-space: nowrap; ">
+                  <a href="/contest/22/submissions?problem_id=6&amp;status=Accepted">0</a>
+                  /
+                    <a href="/contest/22/submissions?problem_id=6&amp;min_score=1">9</a>
+                    
+                    /
+                  
+                  <a href="/contest/22/submissions?problem_id=6">10</a>
+                  </td>
+                
+              </tr>
+            
+            </tbody>
+        </table>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+<script>
+$(function () {
+  setInterval(function () {
+    $('#timer-progress').progress({
+      value: Date.now() / 1000 - 1519293600,
+      total: 15300
+    });
+  }, 5000);
+});
+</script>
+</div>
+    <div class="ui vertical footer segment" style="margin-top: 15px; ">
+      <div class="ui center aligned container">
+        <span style="color: #999;">LibreOJ Powered by <a href="https://github.com/syzoj/syzoj" target="_blank">SYZOJ</a>.</span>
+      </div>
+    </div>
+</div>
+<script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/script.js?20170710"></script>
+</body>
+</html>
+

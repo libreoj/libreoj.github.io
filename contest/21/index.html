@@ -1,0 +1,225 @@
+
+<style>
+.ui.label.pointing.below.left::before { left: 12%; }
+.ui.label.pointing.below.right::before { left: 88%; }
+.ui.label.pointing.below.left { margin-bottom: 0; }
+.ui.label.pointing.below.right { margin-bottom: 0; float: right; }
+#back_to_contest { display: none;  }
+</style>
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" style="position: fixed; width: 100%; overflow: hidden; ">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=1200">
+    <title>AntiLeaf&#39;s Round - 比赛 - LibreOJ</title>
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/tomorrow.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/math.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/style.css?20181212" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/morris.js/0.5.1/morris.css" rel="stylesheet">
+    
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/fira-mono.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/lato.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/open-sans.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/exo-2.css" rel="stylesheet">
+    
+    <script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-75865916-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+</head>
+<body style="position: relative; margin-top: 49px; height: calc(100% - 49px); overflow-y: overlay; ">
+    <div class="ui fixed borderless menu" style="position: fixed; height: 49px; ">
+        <div class="ui container">
+            
+            <a class="header item" href="/"><img src="/logo.svg" style="width: 90px; height: 30px; "></a>
+            
+            <a class="item" href="/"><i class="home icon"></i> 首页</a>
+            <a class="item" href="/problems"><i class="list icon"></i> 题库</a>
+            <a class="item active" href="/contests"><i class="calendar icon"></i> 比赛</a>
+            <a class="item" href="/submissions"><i class="tasks icon"></i> 评测</a>
+            <a class="item" href="/ranklist"><i class="signal icon"></i> 排名</a>
+            <a class="item" href="/discussion/global"><i class="comments icon"></i> 讨论</a>
+            <a class="item" href="/help"><i class="help circle icon"></i> 帮助</a>
+            
+              <a id="back_to_contest" class="item" href="/contest/21"><i class="arrow left icon"></i> 返回比赛</a>
+            
+            <div class="right menu">
+              
+                <div class="item">
+                    <a class="ui button" style="margin-right: 0.5em; " href="/login?url=%2Fcontest%2F21">
+                        登录
+                    </a>
+                    <a class="ui primary button" href="/sign_up?url=%2Fcontest%2F21">
+                        注册
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 28px; ">
+    <div class="ui main container">
+
+<div class="padding">
+  <h1>AntiLeaf&#39;s Round</h1>
+  <div style="margin-bottom: 30px;"><div style="position: relative; overflow: hidden; "><p>我们的智商遭到攻击</p>
+</div></div>
+  
+  
+  
+  
+  
+  <div class="ui pointing below left label">2018-02-17 13:00:00</div>
+  <div class="ui pointing below right label">2018-02-17 18:00:00</div>
+  
+  <div id="timer-progress" class="ui tiny indicating progress success" data-percent="100">
+    <div class="bar" style="width: 100%;"></div>
+  </div>
+  <div class="ui grid">
+    <div class="row">
+      <div class="column">
+        <div class="ui buttons">
+          
+            <a class="ui small blue button" href="/contest/21/ranklist">排行榜</a>
+          
+          
+          <a class="ui small positive button" href="/submissions?contest=21">提交记录</a>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <h4 class="ui top attached block header">信息与公告</h4>
+        <div class="ui bottom attached segment font-content">
+          <div style="position: relative; overflow: hidden; "><p><strong><a href="/article/300">公告</a></strong></p>
+<ul>
+<li><strong>时间</strong>&nbsp;&nbsp;&nbsp;&nbsp;2018 年 2 月 17 日（大年初二） 13:00 ~ 18:00</li>
+<li><strong>时长</strong>&nbsp;&nbsp;&nbsp;&nbsp;5 小时</li>
+<li><strong>题数</strong>&nbsp;&nbsp;&nbsp;&nbsp;3</li>
+<li><strong>赛制</strong>&nbsp;&nbsp;&nbsp;&nbsp;ACM 赛制</li>
+<li><strong>出题人</strong>&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">AntiLeaf</font>，<font color="green">AntiLeaf</font>，<font color="blue">AntiLeaf</font></li>
+<li><font color="red"><strong>Unrated</strong></font>  <s>别打我就行</s></li>
+</ul>
+<p>**UPD：**C 题 <span class="mjpage"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.838ex" height="2.509ex" style="vertical-align: -0.671ex;" viewBox="0 -791.3 791.5 1080.4" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" aria-labelledby="MathJax-SVG-2-Title">
+<title id="MathJax-SVG-2-Title"> Q </title>
+<defs aria-hidden="true">
+<path stroke-width="1" id="E2-MJMATHI-51" d="M399 -80Q399 -47 400 -30T402 -11V-7L387 -11Q341 -22 303 -22Q208 -22 138 35T51 201Q50 209 50 244Q50 346 98 438T227 601Q351 704 476 704Q514 704 524 703Q621 689 680 617T740 435Q740 255 592 107Q529 47 461 16L444 8V3Q444 2 449 -24T470 -66T516 -82Q551 -82 583 -60T625 -3Q631 11 638 11Q647 11 649 2Q649 -6 639 -34T611 -100T557 -165T481 -194Q399 -194 399 -87V-80ZM636 468Q636 523 621 564T580 625T530 655T477 665Q429 665 379 640Q277 591 215 464T153 216Q153 110 207 59Q231 38 236 38V46Q236 86 269 120T347 155Q372 155 390 144T417 114T429 82T435 55L448 64Q512 108 557 185T619 334T636 468ZM314 18Q362 18 404 39L403 49Q399 104 366 115Q354 117 347 117Q344 117 341 117T337 118Q317 118 296 98T274 52Q274 18 314 18Z"></path>
+</defs>
+<g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
+ <use xlink:href="#E2-MJMATHI-51" x="0" y="0"></use>
+</g>
+</svg></span> 操作中的“相连”指的是在同一连通块中 （题面已更新）</p>
+</div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="row">
+      <div class="column">
+         <table class="ui selectable celled table">
+            <thead>
+              <tr>
+                <th class="one wide" style="text-align: center">状态</th>
+                <th>题目</th>
+                
+                  <th class="one wide center aligned">统计</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="/contest/21/problem/1">咱们去烧菜吧</a></td>
+                
+                  <td class="center aligned" style="white-space: nowrap; ">
+                  <a href="/contest/21/submissions?problem_id=1&amp;status=Accepted">1</a>
+                  /
+                    <a href="/contest/21/submissions?problem_id=1&amp;min_score=1"></a>
+                    
+                  <a href="/contest/21/submissions?problem_id=1">3</a>
+                  </td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="/contest/21/problem/2">你这衣服租来的吗</a></td>
+                
+                  <td class="center aligned" style="white-space: nowrap; ">
+                  <a href="/contest/21/submissions?problem_id=2&amp;status=Accepted">5</a>
+                  /
+                    <a href="/contest/21/submissions?problem_id=2&amp;min_score=1"></a>
+                    
+                  <a href="/contest/21/submissions?problem_id=2">10</a>
+                  </td>
+                
+              </tr>
+            
+              <tr>
+                <td class="center aligned" style="white-space: nowrap; ">
+                
+                </td>
+                <td><a href="/contest/21/problem/3">我们的 CPU 遭到攻击</a></td>
+                
+                  <td class="center aligned" style="white-space: nowrap; ">
+                  <a href="/contest/21/submissions?problem_id=3&amp;status=Accepted">0</a>
+                  /
+                    <a href="/contest/21/submissions?problem_id=3&amp;min_score=1"></a>
+                    
+                  <a href="/contest/21/submissions?problem_id=3">1</a>
+                  </td>
+                
+              </tr>
+            
+            </tbody>
+        </table>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+<script>
+$(function () {
+  setInterval(function () {
+    $('#timer-progress').progress({
+      value: Date.now() / 1000 - 1518843600,
+      total: 18000
+    });
+  }, 5000);
+});
+</script>
+</div>
+    <div class="ui vertical footer segment" style="margin-top: 15px; ">
+      <div class="ui center aligned container">
+        <span style="color: #999;">LibreOJ Powered by <a href="https://github.com/syzoj/syzoj" target="_blank">SYZOJ</a>.</span>
+      </div>
+    </div>
+</div>
+<script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/script.js?20170710"></script>
+</body>
+</html>
+

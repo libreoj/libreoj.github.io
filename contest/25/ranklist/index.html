@@ -1,0 +1,1352 @@
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" style="position: fixed; width: 100%; overflow: hidden; ">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=1200">
+    <title>排名 - LibreOJ Test Round #6 - LibreOJ</title>
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/tomorrow.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/math.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/style.css?20181212" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/morris.js/0.5.1/morris.css" rel="stylesheet">
+    
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/fira-mono.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/lato.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/open-sans.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/exo-2.css" rel="stylesheet">
+    
+    <script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-75865916-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+</head>
+<body style="position: relative; margin-top: 49px; height: calc(100% - 49px); overflow-y: overlay; ">
+    <div class="ui fixed borderless menu" style="position: fixed; height: 49px; ">
+        <div class="ui container">
+            
+            <a class="header item" href="/"><img src="/logo.svg" style="width: 90px; height: 30px; "></a>
+            
+            <a class="item" href="/"><i class="home icon"></i> 首页</a>
+            <a class="item" href="/problems"><i class="list icon"></i> 题库</a>
+            <a class="item active" href="/contests"><i class="calendar icon"></i> 比赛</a>
+            <a class="item" href="/submissions"><i class="tasks icon"></i> 评测</a>
+            <a class="item" href="/ranklist"><i class="signal icon"></i> 排名</a>
+            <a class="item" href="/discussion/global"><i class="comments icon"></i> 讨论</a>
+            <a class="item" href="/help"><i class="help circle icon"></i> 帮助</a>
+            
+              <a id="back_to_contest" class="item" href="/contest/25"><i class="arrow left icon"></i> 返回比赛</a>
+            
+            <div class="right menu">
+              
+                <div class="item">
+                    <a class="ui button" style="margin-right: 0.5em; " href="/login?url=%2Fcontest%2F25%2Franklist">
+                        登录
+                    </a>
+                    <a class="ui primary button" href="/sign_up?url=%2Fcontest%2F25%2Franklist">
+                        注册
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 28px; ">
+    <div class="ui main container">
+
+<style>
+.submit_time {
+  font-size: 0.8em;
+  margin-top: 5px;
+  color: #000;
+}
+</style>
+<div class="padding">
+<h1 class="ui center aligned header" style="margin-bottom: 30px; ">LibreOJ Test Round #6</h1>
+        <table class="ui very basic center aligned table">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>用户名</th>
+                
+                
+                <th>
+                  <a href="/contest/25/problem/1">
+                    A + B Problem
+                  </a>
+                </th>
+                
+                <th>
+                  <a href="/contest/25/problem/2">
+                    Guess Date
+                  </a>
+                </th>
+                
+                <th>
+                  <a href="/contest/25/problem/3">
+                    Guess Number
+                  </a>
+                </th>
+                
+                <th>
+                  <a href="/contest/25/problem/4">
+                    最大流
+                  </a>
+                </th>
+                
+                <th>
+                  <a href="/contest/25/problem/5">
+                    最小生成树
+                  </a>
+                </th>
+                
+                
+                  <th>总分</th>
+                
+            </tr>
+            </thead>
+            <tbody>
+            
+            <tr>
+                
+                <td>
+                  
+                    <div class="ui yellow ribbon label">
+                  
+                  1
+                  </div>
+                </td>
+                <td><a href="/user/3361">Enzymii</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82037">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        08:12:14
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td style="background: rgb(244, 255, 245); ">
+                  
+                  
+                      <a href="/submission/82036">
+                        
+                          <span class="score score_10">
+                            750
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        08:11:53
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82114">
+                        
+                          <span class="score score_10">
+                            1000
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        10:16:39
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82106">
+                        
+                          <span class="score score_10">
+                            1500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        09:59:09
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td style="background: rgb(244, 255, 245); ">
+                  
+                  
+                      <a href="/submission/82066">
+                        
+                          <span class="score score_10">
+                            2000
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        09:15:17
+                        
+                      </div>
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_10">
+                      5750
+                    </span>
+                    <div class="submit_time">
+                      10:16:39
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div class="ui yellow ribbon label">
+                  
+                  1
+                  </div>
+                </td>
+                <td><a href="/user/3047">revenge</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82067">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        09:16:15
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82111">
+                        
+                          <span class="score score_10">
+                            750
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        10:05:06
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82118">
+                        
+                          <span class="score score_10">
+                            1000
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        10:19:28
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82073">
+                        
+                          <span class="score score_10">
+                            1500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        09:21:52
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82077">
+                        
+                          <span class="score score_10">
+                            2000
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        09:25:06
+                        
+                      </div>
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_10">
+                      5750
+                    </span>
+                    <div class="submit_time">
+                      10:19:28
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div class="ui brown ribbon label" style="background-color: #C47222 !important;">
+                  
+                  3
+                  </div>
+                </td>
+                <td><a href="/user/4087">Tmotfl</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82069">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        09:17:09
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82074">
+                        
+                          <span class="score score_2">
+                            150
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        09:22:17
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82099">
+                        
+                          <span class="score score_10">
+                            1500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        09:43:52
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82100">
+                        
+                          <span class="score score_10">
+                            2000
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        09:46:59
+                        
+                      </div>
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_7">
+                      4150
+                    </span>
+                    <div class="submit_time">
+                      09:46:59
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div>
+                  
+                  4
+                  </div>
+                </td>
+                <td><a href="/user/3991">VCode</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82058">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        08:46:33
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82103">
+                        
+                          <span class="score score_10">
+                            1500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        09:49:54
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82101">
+                        
+                          <span class="score score_10">
+                            2000
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        09:48:44
+                        
+                      </div>
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_6">
+                      4000
+                    </span>
+                    <div class="submit_time">
+                      09:49:54
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div>
+                  
+                  5
+                  </div>
+                </td>
+                <td><a href="/user/199">Secret_tL</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82016">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        06:19:58
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82020">
+                        
+                          <span class="score score_4">
+                            330
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        06:25:07
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td style="background: rgb(244, 255, 245); ">
+                  
+                  
+                      <a href="/submission/82019">
+                        
+                          <span class="score score_10">
+                            1500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        06:24:14
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_4">
+                      2330
+                    </span>
+                    <div class="submit_time">
+                      06:25:07
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div>
+                  
+                  6
+                  </div>
+                </td>
+                <td><a href="/user/2162">bestFy</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82008">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        00:36:17
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82007">
+                        
+                          <span class="score score_5">
+                            381
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        00:34:58
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td style="background: rgb(244, 255, 245); ">
+                  
+                  
+                      <a href="/submission/82011">
+                        
+                          <span class="score score_10">
+                            1000
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        00:56:58
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_3">
+                      1881
+                    </span>
+                    <div class="submit_time">
+                      00:56:58
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div>
+                  
+                  7
+                  </div>
+                </td>
+                <td><a href="/user/3013">longgod</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82032">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        07:53:23
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82064">
+                        
+                          <span class="score score_10">
+                            750
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        08:56:35
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_2">
+                      1250
+                    </span>
+                    <div class="submit_time">
+                      08:56:35
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div>
+                  
+                  8
+                  </div>
+                </td>
+                <td><a href="/user/3760">Nishikino_Curtis</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82051">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        08:40:41
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82063">
+                        
+                          <span class="score score_8">
+                            600
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        08:50:47
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_1">
+                      1100
+                    </span>
+                    <div class="submit_time">
+                      08:50:47
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div>
+                  
+                  9
+                  </div>
+                </td>
+                <td><a href="/user/8">liu_cheng_ao</a></td>
+                
+                
+                  
+                    <td style="background: rgb(244, 255, 245); ">
+                  
+                  
+                      <a href="/submission/82006">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        00:22:02
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_0">
+                      500
+                    </span>
+                    <div class="submit_time">
+                      00:22:02
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div>
+                  
+                  9
+                  </div>
+                </td>
+                <td><a href="/user/914">lyqlyqlib</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82021">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        06:28:50
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_0">
+                      500
+                    </span>
+                    <div class="submit_time">
+                      06:28:50
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div>
+                  
+                  9
+                  </div>
+                </td>
+                <td><a href="/user/3888">wsm000</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82022">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        06:53:35
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82023">
+                        
+                          <span class="status compile_error">
+                            0
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        06:57:18
+                        
+                      </div>
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_0">
+                      500
+                    </span>
+                    <div class="submit_time">
+                      06:57:18
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div>
+                  
+                  9
+                  </div>
+                </td>
+                <td><a href="/user/1315">yasar</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82026">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        07:14:12
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_0">
+                      500
+                    </span>
+                    <div class="submit_time">
+                      07:14:12
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div>
+                  
+                  9
+                  </div>
+                </td>
+                <td><a href="/user/1922">Mrha</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82027">
+                        
+                          <span class="score score_10">
+                            500
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        07:22:31
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_0">
+                      500
+                    </span>
+                    <div class="submit_time">
+                      07:22:31
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            <tr>
+                
+                <td>
+                  
+                    <div>
+                  
+                  14
+                  </div>
+                </td>
+                <td><a href="/user/2">samzhang</a></td>
+                
+                
+                  
+                    <td>
+                  
+                  
+                      <a href="/submission/82004">
+                        
+                          <span class="status compile_error">
+                            0
+                          </span>
+                        
+                      </a>
+                      <div class="submit_time">
+                        00:19:52
+                        
+                      </div>
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                  
+                    <td>
+                  
+                  
+                    </td>
+                  
+                
+                
+                  <td>
+                    <span class="score score_0">
+                      0
+                    </span>
+                    <div class="submit_time">
+                      00:19:52
+                    </div>
+                  </td>
+                
+            </tr>
+            
+            
+            </tbody>
+        </table>
+
+</div>
+</div>
+    <div class="ui vertical footer segment" style="margin-top: 15px; ">
+      <div class="ui center aligned container">
+        <span style="color: #999;">LibreOJ Powered by <a href="https://github.com/syzoj/syzoj" target="_blank">SYZOJ</a>.</span>
+      </div>
+    </div>
+</div>
+<script data-cfasync="false" src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/script.js?20170710"></script>
+</body>
+</html>
+
